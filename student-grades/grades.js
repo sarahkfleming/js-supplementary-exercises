@@ -64,10 +64,24 @@ console.info(scores[0])
 
 // Which grade had the most students achieve it? Use an if statment, and a currentGradeCount variable, in your for..in loop to see if the current grade's value is higher than the last one.
 
+let min = Infinity
+let max = -Infinity
+let highGrade
+let lowGrade
 
-
+for (const currentGradeCount in grades) {
+  if (grades[currentGradeCount] < min) {
+    min = grades[currentGradeCount]
+    lowGrade = currentGradeCount
+  }
+  if (grades[currentGradeCount] > max) {
+    max = grades[currentGradeCount]
+    highGrade = currentGradeCount
+  }
+}
+console.info(highGrade)
 // Which grade had the fewest students achieve it?
-
+console.info(lowGrade)
 /*
 NOTES
 ----------------------------------------------------------------
