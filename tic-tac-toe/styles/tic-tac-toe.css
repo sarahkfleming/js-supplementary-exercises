@@ -1,5 +1,33 @@
-#tic-tac-toe--container {
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    text-align: center;
+}
+
+.tic-tac-toe--container {
     display: grid;
+    justify-content: center;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 150px 150px 150px;
+}
+
+.box {
+    border: 1.5px solid black;
+    justify-content: center;
+    text-align: center;
+}
+
+.letter {
+    font-size: 8em;
+    margin: 0px;
+}
+
+#red {
+    color: red;
+}
+
+#blue {
+    color: blue;
 }
